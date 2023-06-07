@@ -1,0 +1,26 @@
+package com.baeldung.multipledb.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.baeldung.multipledb.BookingDao.BookingDao;
+import com.baeldung.multipledb.dao.user.UserDao;
+
+@Service
+public class BookingServiceImpl implements BookingService {
+	
+	@Autowired
+	private UserDao userDao;
+	
+	@Autowired
+	private BookingDao bookingDao;
+
+	public List findUserBookings(String emailId) {
+		UserDetails userdetails = userDao.findByEmail(emailId);
+		List bookings = bookingDao.findByCreatedBy(userdetails.getId());
+		return bookings;
+	}
+}
+

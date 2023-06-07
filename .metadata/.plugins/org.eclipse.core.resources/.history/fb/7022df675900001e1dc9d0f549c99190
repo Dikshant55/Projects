@@ -1,0 +1,10 @@
+package com.baeldung.multipledb.BookingDao;
+
+import java.util.List;
+import org.springframework.data.repository.CrudRepository;
+
+public interface BookingDao extends CrudRepository {
+	
+	List findByCreatedBy(Long userId);
+
+}

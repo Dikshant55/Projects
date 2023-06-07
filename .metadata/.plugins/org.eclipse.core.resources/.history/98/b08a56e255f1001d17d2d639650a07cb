@@ -1,0 +1,19 @@
+package com.Example.StudentMangementSystem;
+
+public class Test {
+
+	private Customer customer;{
+		
+		Customer.builder().name("Dikshant")
+		                  .age(21)
+		                  .city("Mandi")
+		                  .isActive(true)
+		                  .dob("06/12/2001")
+		                  .build();
+		
+		
+	}
+	
+	
+	
+}

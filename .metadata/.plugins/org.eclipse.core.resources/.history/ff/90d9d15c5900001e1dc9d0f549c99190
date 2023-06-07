@@ -1,0 +1,27 @@
+package com.baeldung.multipledb.bookingcontroller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.baeldung.multipledb.service.BookingServiceImpl;
+
+@Controller
+@RequestMapping("/booking")
+public class BookingController {
+	
+	@Autowired
+	private BookingServiceImpl bookingService;
+
+	@RequestMapping(value = "/{email:.+}")
+	public <ResponseEntity> void findUserBookings(@PathVariable(name = "email", value = "email") String email) {
+
+		List bookings = bookingService.findUserBookings(email);
+		return new <ResponseEntity>(bookings, HttpStatus.OK)>\;
+	}
+
+}

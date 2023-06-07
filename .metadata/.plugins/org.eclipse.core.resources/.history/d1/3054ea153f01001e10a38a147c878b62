@@ -1,0 +1,10 @@
+package com.Example.StudentMangementSystem;
+
+public class MethodImp {
+	
+	String No="Abc12";
+	
+   	
+  
+
+}

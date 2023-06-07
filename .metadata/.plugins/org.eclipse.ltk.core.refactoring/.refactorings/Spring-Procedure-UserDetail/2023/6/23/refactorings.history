@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.baeldung.multipledb.model.UserDetail&apos; to &apos;UserSPDetail&apos;&#x0D;&#x0A;- Original project: &apos;Spring-Procedure-UserDetail&apos;&#x0D;&#x0A;- Original element: &apos;com.baeldung.multipledb.model.UserDetail&apos;&#x0D;&#x0A;- Renamed element: &apos;com.baeldung.multipledb.model.UserSPDetail&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UserDetail&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.baeldung.multipledb.model{UserDetail.java[UserDetail" matchStrategy="1" name="UserSPDetail" qualified="false" references="true" similarDeclarations="false" stamp="1685982591955" textual="false" version="1.0"/>
+</session>

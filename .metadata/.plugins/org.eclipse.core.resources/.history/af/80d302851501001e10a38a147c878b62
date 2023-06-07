@@ -1,0 +1,24 @@
+package com.Example.StudentMangementSystem;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.NamedStoredProcedureQuery;
+import jakarta.persistence.ParameterMode;
+import jakarta.persistence.StoredProcedureParameter;
+import lombok.Data;
+@Entity
+@Data
+@jakarta.persistence.Table(name="student")
+@NamedStoredProcedureQuery(name="name", procedureName = "new",
+                parameters = {
+ @StoredProcedureParameter (mode = ParameterMode.IN,name="roll",type =Integer.class),
+ @StoredProcedureParameter (mode = ParameterMode.OUT,name="name",type =String.class)
+})
+public class Student {
+	
+	@Id
+	@GeneratedValue
+	private int rollno;
+	private String name;
+	private String standard;
+}

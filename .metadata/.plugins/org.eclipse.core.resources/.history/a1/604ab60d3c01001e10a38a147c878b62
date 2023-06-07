@@ -1,0 +1,16 @@
+package com.Example.StudentMangementSystem;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
+public class Methods {
+
+	public static String FORMAT="yyyyMMDD";
+	public static DateFormat dateFormat =new SimpleDateFormat(FORMAT);
+	
+	public static boolean getDate(String date) {
+		return false;
+		
+		
+	}
+}

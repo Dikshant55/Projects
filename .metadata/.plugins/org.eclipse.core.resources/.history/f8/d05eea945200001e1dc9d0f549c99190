@@ -1,0 +1,8 @@
+package com.baeldung.multipledb.BookingDao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.baeldung.multipledb.model.product.Booking;
+
+public interface BookingDao
+  extends JpaRepository<Booking, Integer> { }

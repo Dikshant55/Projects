@@ -1,0 +1,5 @@
+package com.baeldung.multipledb.dao.user;
+
+public interface UserRepository {
+
+}

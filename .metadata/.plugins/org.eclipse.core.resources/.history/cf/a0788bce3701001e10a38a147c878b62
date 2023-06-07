@@ -1,0 +1,62 @@
+package com.Example.StudentMangementSystem;
+
+
+import java.util.Iterator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
+@SpringBootApplication
+public class StudentMangementSystemApplication implements CommandLineRunner
+{
+    
+	@Autowired
+	private StudentRepo studentrepo;
+	public static void main(String[] args) {
+		SpringApplication.run(StudentMangementSystemApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		deleteStudent();
+		
+	}
+//	public void getStudent() {
+//		try {
+//			log.info("in the run method");
+//	Iterable<Student> dIterable = studentrepo.findAll();
+//	Iterator<Student> iterator= dIterable.iterator();
+//	while(iterator.hasNext()) {
+//		log.info(iterator.next().toString());
+//	}
+//		}
+//		catch (Exception e) {
+//			System.out.println("error");
+//		}
+//	}
+//	public void createStudent() {
+//		try {
+//		log.info("process");
+//			
+//		Student student=new Student();
+//		student.setRollno(5);
+//		student.setName("Five");
+//		student.setStandard("five");
+//		
+//		studentrepo.save(student);
+//		}
+//		catch (Exception e) {
+//       log.error("error");
+//			// TODO: handle exception
+//		}
+//	}
+	public void deleteStudent() {
+		
+		Student student =new Student();
+		student.getRollno();
+		studentrepo.delete(student);
+	}
+	}

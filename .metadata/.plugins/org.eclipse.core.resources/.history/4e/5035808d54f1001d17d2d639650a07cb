@@ -1,0 +1,8 @@
+package com.Example.StudentMangementSystem;
+
+public class Test {
+
+	private Customer customer;
+	
+	
+}

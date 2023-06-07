@@ -1,0 +1,13 @@
+package com.Example.StudentMangementSystem;
+
+public class MethodImp {
+	
+	String No="Abc12";
+	
+   	
+	if(!Methods.isNumber(value)) {
+		
+		
+	}
+
+}

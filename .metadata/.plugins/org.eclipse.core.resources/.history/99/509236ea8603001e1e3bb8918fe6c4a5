@@ -1,0 +1,24 @@
+package com.baeldung.multipledb.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.NamedStoredProcedureQueries;
+import jakarta.persistence.NamedStoredProcedureQuery;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Entity
+@Data
+@Table
+@NamedStoredProcedureQueries({@NamedStoredProcedureQuery(name="firstProcedure",procedureName="getTickets"),
+
+	@NamedStoredProcedureQuery(name="secondProcedure",procedureName="getTicketsByCategory")})
+public class Ticket {
+	
+	@Id
+	private int id;
+	private int amount;
+	private String category;
+	
+
+}

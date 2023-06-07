@@ -1,0 +1,23 @@
+package com.baeldung.multipledb.model;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class TicketService {
+	
+	@Autowired
+	private TicketRepo repo;
+
+	
+	
+	public List<Ticket> getTicketInfo(Ticket ticket) {
+		Ticket ticket1 =new Ticket();
+		ticket1.setId(1);
+		ticket1.setAmount(100);
+		ticket1.setCatagory("catagory");
+		return repo.getTicketInfo(ticket1);
+	}
+}

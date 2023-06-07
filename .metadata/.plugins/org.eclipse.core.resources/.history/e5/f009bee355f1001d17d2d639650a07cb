@@ -1,0 +1,13 @@
+package com.Example.StudentMangementSystem;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class BuilderPatternProjectApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BuilderPatternProjectApplication.class, args);
+	}
+
+}

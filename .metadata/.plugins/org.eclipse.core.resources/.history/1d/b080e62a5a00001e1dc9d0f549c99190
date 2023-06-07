@@ -1,0 +1,5 @@
+package om.dineshonjava.myapp.dao.author;
+
+public interface AuthorRepository {
+
+}

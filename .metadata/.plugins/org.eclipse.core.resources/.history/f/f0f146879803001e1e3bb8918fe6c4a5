@@ -1,0 +1,11 @@
+package com.baeldung.multipledb.model;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.query.Procedure;
+
+public interface TicketRepo extends JpaRepository<Ticket, Integer> {
+	
+	@Procedure(name = "getTickets")
+	public void yourProcedure(Ticket ticket);
+
+}

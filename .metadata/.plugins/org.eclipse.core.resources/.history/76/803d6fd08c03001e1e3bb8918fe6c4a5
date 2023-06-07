@@ -1,0 +1,55 @@
+package com.Example.StudentMangementSystem;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class StudentServiceImpl implements StudentService{
+	
+	private StudentRepo studentrepo;
+	
+	@Override
+	public Student createStudent(Student student) {
+		// TODO Auto-generated method stub
+		return studentrepo.save(student);
+	}
+
+	@Override
+	public Student getStudentByRollno(Integer rollno) {
+		// TODO Auto-generated method stub
+		Optional<Student> optionalstudent= studentrepo.findById(rollno);
+		return optionalstudent.get();
+	}
+
+	@Override
+	public void deleteStudent(Integer rollno) {
+		// TODO Auto-generated method stub
+		studentrepo.deleteById(rollno);
+	}
+
+	@Override
+	public Student updateStudent(Student student) {
+		// TODO Auto-generated method stub
+		Student existingStudent = studentrepo.findById(student.getRollno()).get();
+        existingStudent.setName(student.getName());
+    
+        existingStudent.setStandard(student.getStandard());
+       Student updatedStudent = studentrepo.save(existingStudent);
+        return updatedStudent;
+	}
+	@Override
+	public List<Student> getallStudent() {
+        return studentrepo.findAll();
+    }
+	
+	public Integer fetchStudentName() {
+		return studentrepo.fetchStudentName(1);
+		
+	}
+	
+}
