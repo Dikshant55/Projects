@@ -1,0 +1,16 @@
+package com.baeldung.multipledb.model;
+
+public class Demo {
+
+	 int rollno;  
+	 String name;  
+	 String city;
+	public Demo(int rollno, String name, String city) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+		this.city = city;
+	}  
+	
+	
+}

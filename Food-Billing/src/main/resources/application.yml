@@ -1,0 +1,11 @@
+server.port: 9191
+  
+spring:
+ h2:
+   console:true
+   
+ application: 
+     name: Food-Billing
+ 
+logging: 
+   file: C:/work/logs/application.log    

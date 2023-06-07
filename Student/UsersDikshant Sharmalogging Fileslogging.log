@@ -1,0 +1,4 @@
+2023-04-08 11:59:14 INFO  StudentApplication:15 - This is info message
+2023-04-08 11:59:14 WARN  StudentApplication:16 - This is warn message
+2023-04-08 11:59:14 FATAL StudentApplication:17 - This is fatal message
+2023-04-08 11:59:14 ERROR StudentApplication:18 - This is error message

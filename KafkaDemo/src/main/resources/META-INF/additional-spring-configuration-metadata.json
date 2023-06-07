@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "producer",
+    "type": "java.lang.String",
+    "description": "A description for 'producer'"
+  },
+  {
+    "name": "bootstrap-servers",
+    "type": "java.lang.String",
+    "description": "A description for 'bootstrap-servers'"
+  },
+  {
+    "name": "key-serializer",
+    "type": "java.lang.String",
+    "description": "A description for 'key-serializer'"
+  },
+  {
+    "name": "value-serializer",
+    "type": "java.lang.String",
+    "description": "A description for 'value-serializer'"
+  },
+  {
+    "name": "kafka",
+    "type": "java.lang.String",
+    "description": "A description for 'kafka'"
+  },
+  {
+    "name": "spring",
+    "type": "java.lang.String",
+    "description": "A description for 'spring'"
+  }
+]}

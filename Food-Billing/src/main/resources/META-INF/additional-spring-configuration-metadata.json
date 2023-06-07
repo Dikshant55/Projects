@@ -1,0 +1,47 @@
+{"properties": [
+  {
+    "name": "application",
+    "type": "java.lang.String",
+    "description": "A description for 'application'"
+  },
+  {
+    "name": "name",
+    "type": "java.lang.String",
+    "description": "A description for 'name'"
+  },
+  {
+    "name": "port",
+    "type": "java.lang.String",
+    "description": "A description for 'port'"
+  },
+  {
+    "name": "file",
+    "type": "java.lang.String",
+    "description": "A description for 'file'"
+  },
+  {
+    "name": "logging",
+    "type": "java.lang.String",
+    "description": "A description for 'logging'"
+  },
+  {
+    "name": "spring",
+    "type": "java.lang.String",
+    "description": "A description for 'spring'"
+  },
+  {
+    "name": "console",
+    "type": "java.lang.String",
+    "description": "A description for 'console'"
+  },
+  {
+    "name": "console",
+    "type": "java.lang.String",
+    "description": "A description for 'console'"
+  },
+  {
+    "name": "h2",
+    "type": "java.lang.String",
+    "description": "A description for 'h2'"
+  }
+]}
