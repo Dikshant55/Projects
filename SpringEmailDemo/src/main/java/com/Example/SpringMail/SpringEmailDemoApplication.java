@@ -8,7 +8,7 @@ import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
 public class SpringEmailDemoApplication {
-	
+
 	@Autowired
 	private EmailSenderService senderService;
 
@@ -18,11 +18,9 @@ public class SpringEmailDemoApplication {
 
 	@EventListener(ApplicationReadyEvent.class)
 	public void senderMail() {
-		
-		
-		senderService.sendEmail("dikshant51015@gmail.com","This is subject","This is body of mail");
-		
-		
+
+		senderService.sendEmail("dikshant51015@gmail.com", "This is subject", "This is body of mail");
+
 	}
-	
+
 }

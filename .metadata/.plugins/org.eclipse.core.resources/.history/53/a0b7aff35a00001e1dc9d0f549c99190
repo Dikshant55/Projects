@@ -1,5 +1,0 @@
-package com.dineshonjava.myapp.configuration;
-
-public class PersistenceAuthorAutoConfiguration {
-
-}

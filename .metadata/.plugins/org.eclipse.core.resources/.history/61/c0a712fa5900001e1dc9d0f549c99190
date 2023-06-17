@@ -1,4 +1,0 @@
-package com.dineshonjava.myapp.dao.book;
-
-public interface BookRepository
-  extends JpaRepository<Book, Integer> { }

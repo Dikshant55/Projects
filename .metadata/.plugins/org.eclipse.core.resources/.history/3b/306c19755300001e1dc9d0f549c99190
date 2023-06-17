@@ -1,5 +1,0 @@
-package com.baeldung.multipledb.service;
-
-public class BookingServiceImpl {
-
-}

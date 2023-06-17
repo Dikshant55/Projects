@@ -6,23 +6,10 @@ public class Main {
 	static Scanner sc=new Scanner(System.in);
 	public static void main(String[] args) {
 		
-		String a=null;
-		System.out.println(!isEmpty(a));
+		String id ="123";
+		System.out.println(isNumberAndNotNull(id));
 		
-		
-		
-		System.out.println("enter number");
-		int num =sc.nextInt();
-		if(isNumberOrGreaterThan0(num)) {
-		System.out.println("good");}
-		else System.out.println("error");
-		
-		
-		Integer discountDayDue = getDiscountDayDue(new ObjectEntity());
-		
-		System.out.println(discountDayDue);
-		}
-	
+	}
 		
 	public static boolean isNumberOrGreaterThan0(Integer value) {
 		
@@ -72,5 +59,23 @@ public class Main {
 	}
 	
 	
-}
+	public static boolean isNumberAndNotNull(String value) {
+		if(value == null ) {
+			return false;
+		}
+		try {
+			Double.parseDouble(value);
+			return true;
+		}
+		catch (NumberFormatException e) {
+			// TODO: handle exception
+			return false;
+		}
+		
+		
+	}
+	}
+	
+	
+
 
